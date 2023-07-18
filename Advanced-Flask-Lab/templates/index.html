@@ -17,7 +17,7 @@
 
             <h1>Description</h1>
             <br>
-            <!-- About me button -->
+            {{disc}}
             <a href="#"><button style="color:white;width:40%" >More about me</button></a>
             <!--  -->
             <br> <br>
@@ -38,12 +38,12 @@
                 
                 <div>
                       <a href="">
-                        <img src="static/images/thumbs/01.jpg" alt="" />
+                        <img src="{{imge}}" alt="" />
                         <h3>Caption... blah blah blah</h3>
                       </a>
                 
                       <a href="">
-                        <img src="url_for('static',filename='images/thumbs/02.jpg')" alt="" />
+                        <img src="{{url_for('static',filename='images/thumbs/02.jpg')}}" alt="" />
                         <h3>Caption... blah blah blah</h3>
                       </a>
                 </div>    
@@ -57,7 +57,14 @@
 							</section>
 
 					</section>
-
+					{% for i in diofphoto %}
+					<div>
+                  <a href="">
+                        <img src="{{i}}" alt="" />
+                        <h3>{{diofphoto[i]}}</h3>
+                      </a>
+                </div>  
+					{% endfor %}
 				<!-- Footer -->
 					<footer id="footer">
 						<p>&copy; MEET's (fake) Instagram. No rights reserved. 
