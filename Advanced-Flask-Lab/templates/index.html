@@ -22,11 +22,11 @@
             <!--  -->
             <br> <br>
 						<ul class="icons">
-							<li><a href="#" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://twitter.com/i/flow/login?redirect_after_login=%2F" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="https://www.facebook.com/" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2F" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
 							<li><a href="#" class="icon style2 fa-500px"><span class="label">500px</span></a></li>
-							<li><a href="#" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li>
+							<li><a href="https://mail.google.com/mail/u/0/#inbox" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li>
 						</ul>
 					</header>
 
@@ -57,14 +57,14 @@
 							</section>
 
 					</section>
-					{% for i in diofphoto %}
 					<div>
-                  <a href="">
-                        <img src="{{i}}" alt="" />
-                        <h3>{{diofphoto[i]}}</h3>
-                      </a>
-                </div>  
+					{% for i in diofphoto %}
+
+                        <img src="{{i}}" alt="" width="30%" />
+                        {{diofphoto[i]}}
 					{% endfor %}
+					
+				</div>
 				<!-- Footer -->
 					<footer id="footer">
 						<p>&copy; MEET's (fake) Instagram. No rights reserved. 
